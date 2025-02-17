@@ -47,6 +47,7 @@ Backend: Render
 1️⃣ Clone the Repository
 
  git clone https://github.com/srivanth0501/Nasa.git
+ 
  cd Nasa
 
 2️⃣ Backend Setup
@@ -68,6 +69,9 @@ Start the backend server:
 
  cd ../Frontend  
  npm install  
+
+ Update src/Services/Api.js with backend URL:
+ const BASE_URL = "https://nasa-backend.onrender.com/api";
 
 Start the frontend:
 
