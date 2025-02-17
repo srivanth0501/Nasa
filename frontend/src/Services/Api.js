@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://nasa-frontend-gmnn.onrender.com';
 
 export const loginUser = async (email, password) => {
     try {
