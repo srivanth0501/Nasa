@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://nasa-frontend-gmnn.onrender.com';
+const BASE_URL = 'https://nasafrontend.vercel.app/';
 
 export const loginUser = async (email, password) => {
     try {
