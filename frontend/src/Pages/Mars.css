@@ -1,0 +1,122 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto !important; 
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mars-container {
+  background: linear-gradient(to bottom, #001f4d, #000);
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto !important; 
+  scrollbar-width: none; 
+}
+
+
+.mars-container::-webkit-scrollbar {
+  display: none;
+}
+
+.search-panel input, 
+.search-panel select {
+  width: 90%; 
+  max-width: 400px; 
+  padding: 10px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.search-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+.input-box, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(50, 50, 50, 0.8);  
+  color: white;
+  text-align: center;
+  outline: none;
+}
+
+.input-box::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+select {
+  cursor: pointer;
+  appearance: none;
+}
+
+
+.fetch-button {
+  margin-top: 10px;
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.fetch-button:hover {
+  background: #0056b3;
+}
+
+
+@media (max-height: 800px) {
+  .mars-container {
+    padding-bottom: 100px;
+  }
+}
+
+
+.response-container {
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .search-panel {
+    width: 95%;
+  }
+}

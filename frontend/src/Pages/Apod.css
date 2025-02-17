@@ -1,0 +1,132 @@
+.apod-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #001f4d, #000);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  align-items: center;
+}
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.dropdown, .input-date, .input-number {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 1rem;
+}
+
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.fetch-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.fetch-button:hover {
+  background: #0056b3;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+
+.image-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.apod-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.apod-video {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.explanation {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+
+.no-data {
+  font-size: 1.2rem;
+  color: yellow;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loading, .error {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 10px;
+}
