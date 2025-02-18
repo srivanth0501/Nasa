@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://nasa-backend-h1me.onrender.com';
+const BASE_URL = 'https://nasa-backend-h1me.onrender.com/api';
 
 export const loginUser = async (email, password) => {
     try {
