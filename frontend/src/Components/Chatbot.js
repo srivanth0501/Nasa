@@ -10,7 +10,7 @@ const Chatbot = () => {
   const sendMessage = async () => {
     if (!input) return;
     try {
-      const response = await axios.post("http://localhost:5000/api/chatbot", { question: input });
+      const response = await axios.post("https://nasa-backend-h1me.onrender.com/api/chatbot", { question: input });
       setMessages([...messages, { user: input, bot: response.data.response }]);
       setInput("");
     } catch (error) {
